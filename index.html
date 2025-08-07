@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DevLab • Home</title>
+  <meta name="description" content="Mini site para laboratório de GitHub." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">DevLab</a>
+  <nav id="nav" class="nav">
+    <a class="nav-link active" href="index.html">Início</a>
+    <a class="nav-link" href="sobre.html">Sobre</a>
+    <button id="themeToggle" class="btn btn-ghost" title="Alternar tema" aria-label="Alternar tema">🌓</button>
+  </nav>
+  <button id="menuToggle" class="menu-toggle" aria-label="Abrir menu">☰</button>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Bem‑vindo ao <span class="grad">DevLab</span></h1>
+    <p>Um mini site perfeito para treinar Git, commits, branches e GitHub Pages.</p>
+    <div class="cta">
+      <a class="btn" href="sobre.html">Começar agora</a>
+      <a class="btn btn-ghost" href="https://github.com/" target="_blank" rel="noopener">Ver GitHub</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <article class="card">
+      <h2>HTML Semântico</h2>
+      <p>Estrutura limpa com header, main e footer para acessibilidade.</p>
+    </article>
+    <article class="card">
+      <h2>Responsivo</h2>
+      <p>Layout fluido com mobile menu e tipografia legível.</p>
+    </article>
+    <article class="card">
+      <h2>Tema Escuro</h2>
+      <p>Suporte a prefers-color-scheme e toggle manual.</p>
+    </article>
+  </section>
+
+  <section class="newsletter">
+    <h2>Receba dicas de Git</h2>
+    <form class="inline-form" onsubmit="event.preventDefault(); alert('Assinatura registrada! (simulada)');">
+      <input type="email" placeholder="seu@email.com" required>
+      <button class="btn" type="submit">Assinar</button>
+    </form>
+    <small>Sem spam. Cancelar quando quiser.</small>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> DevLab • Feito para seu laboratório de GitHub</p>
+</footer>
+</body>
+</html>

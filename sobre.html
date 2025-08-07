@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DevLab • Sobre</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">DevLab</a>
+  <nav id="nav" class="nav">
+    <a class="nav-link" href="index.html">Início</a>
+    <a class="nav-link active" href="sobre.html">Sobre</a>
+    <button id="themeToggle" class="btn btn-ghost" title="Alternar tema" aria-label="Alternar tema">🌓</button>
+  </nav>
+  <button id="menuToggle" class="menu-toggle" aria-label="Abrir menu">☰</button>
+</header>
+
+<main class="container">
+  <article class="prose">
+    <h1>Sobre o projeto</h1>
+    <p>Este site é um ponto de partida para suas aulas e labs de Git/GitHub.</p>
+    <h2>O que praticar</h2>
+    <ul>
+      <li>Criar repositório, fazer commits e abrir branches.</li>
+      <li>Resolver conflitos pequenos (edite este arquivo e crie um PR).</li>
+      <li>Publicar no GitHub Pages (configuração abaixo 👇).</li>
+    </ul>
+
+    <h2>Como rodar localmente</h2>
+    <pre><code># macOS/Linux
+python3 -m http.server 5500
+
+# Windows (PowerShell)
+py -m http.server 5500
+# depois abra http://localhost:5500
+</code></pre>
+
+    <h2>Checklist para GitHub Pages</h2>
+    <ol>
+      <li>Faça um repositório e envie estes arquivos.</li>
+      <li>Settings ▸ Pages ▸ Source: <strong>Deploy from a branch</strong>.</li>
+      <li>Selecione a branch (ex.: <code>main</code>) e a pasta <code>/root</code>.</li>
+      <li>Salve. Aguarde o deploy. A URL aparecerá em “Pages”.</li>
+    </ol>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> DevLab • Feito com ♥</p>
+</footer>
+</body>
+</html>
